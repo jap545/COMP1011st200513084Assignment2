@@ -11,15 +11,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <AnchorPane prefHeight="700.0" prefWidth="900.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1011st200513084assignment2.SearchViewController">
    <children>
-      <VBox alignment="BOTTOM_CENTER" layoutX="14.0" layoutY="10.0" prefHeight="700.0" prefWidth="904.0" spacing="30.0">
+      <VBox alignment="BOTTOM_CENTER" layoutX="14.0" layoutY="10.0" prefHeight="710.0" prefWidth="918.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                <children>
                   <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0" />
-                  <TextField fx:id="searchTextField" promptText="Enter Team Name" />
+                  <TextField fx:id="searchTextField1" promptText="Enter Team 1" />
+                  <TextField fx:id="searchTextField2" promptText="Enter Team 2" />
                   <Button mnemonicParsing="false" onAction="#searchForTeams" text="Search" />
                </children>
                <padding>
@@ -40,7 +40,9 @@
                   </VBox>
                   <VBox fx:id="selectedVBox" alignment="CENTER">
                      <children>
-                        <ImageView fx:id="posterImageView" fitHeight="400.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imageView1" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="VS" />
+                        <ImageView fx:id="imageView2" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                         <Button mnemonicParsing="false" text="Details &gt;&gt;" />
                      </children>
                   </VBox>
