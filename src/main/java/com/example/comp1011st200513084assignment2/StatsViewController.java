@@ -5,7 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
-public class StatsViewController {
+import java.io.IOException;
+
+public class StatsViewController implements StatsLoader {
 
     @FXML
     private Label assistsLabel1;
@@ -74,8 +76,11 @@ public class StatsViewController {
     private Label turnoversLabel2;
 
     @FXML
-    void backToSearch(ActionEvent event) {
-
+    void backToSearch(ActionEvent event) throws IOException {
+        SceneChanger.changeScenes(event,"search-view.fxml");
+    }
+    public void loadStats(int gameId){
+        System.out.println("loadStats-"+gameId);
     }
 
 }

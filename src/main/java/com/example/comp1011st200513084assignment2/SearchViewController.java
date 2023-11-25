@@ -94,5 +94,10 @@ public class SearchViewController {
         listView.getItems().addAll(apiResponse.getResponse());
         resultsMsgLabel.setText("Showing "+ listView.getItems().size() + "of " + apiResponse.getResults());
     }
+    @FXML
+    void getGameStats(ActionEvent event) throws IOException {
+        Games gameSelected=listView.getSelectionModel().getSelectedItem();
+        SceneChanger.changeScenes(event,"stats-view.fxml",gameSelected.getGameId());
+    }
 
 }

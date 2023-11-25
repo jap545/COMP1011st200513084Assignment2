@@ -43,7 +43,7 @@
                         <ImageView fx:id="imageView1" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                         <Label text="VS" />
                         <ImageView fx:id="imageView2" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                        <Button mnemonicParsing="false" text="Details &gt;&gt;" />
+                        <Button mnemonicParsing="false" onAction="#getGameStats" text="Stats &gt;&gt;" />
                      </children>
                   </VBox>
                </children>
